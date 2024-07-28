@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,7 +8,6 @@ body {
     scroll-behavior: smooth;
     display: flex;
 }
-
 .sidenav {
     height: 100%;
     width: 200px;
@@ -63,10 +63,10 @@ body {
 }
 
 .container {
-    max-width: 1100px; /* Increased max-width */
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 3rem; /* Increased padding */
-    background:bisque;
+    padding: 3rem;
+    background: bisque;
     border-radius: 10px;
     box-shadow: wheat;
     margin-bottom: 2rem;
@@ -76,7 +76,6 @@ body {
 h1, h2 {
     color: #de6262;
     text-align: center;
-
 }
 
 h2 {
@@ -85,7 +84,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem; /* Slightly increased font size */
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -101,8 +100,6 @@ p {
     margin-right: 20px;
     width: 350px;
     height: 350px;
-    padding-right: 90px;
-    
 }
 
 .profile-text {
@@ -114,27 +111,28 @@ p {
     font-size: 2rem;
     color: #333;
 }
+
 .explore-button {
     display: inline-block;
     padding: 15px 30px;
     font-size: 1.2em;
     color: #fff;
-    background-color:black;
+    background-color: black;
     border: none;
-    margin-left: 200px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .explore-button:hover {
-    background-color:grey;
+    background-color: grey;
     transform: scale(1.05);
 }
 
 .explore-button:active {
     transform: scale(1);
 }
+
 .skill-container {
     display: flex;
     justify-content: space-around;
@@ -142,14 +140,14 @@ p {
 }
 
 .skill {
-    background:#FFB38E;
+    background: #FFB38E;
     color: #fff;
     margin: 1rem;
-    padding: 3rem; /* Increased padding */
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 calc(30% - 2rem); /* Adjusted flex properties */
+    flex: 1 1 calc(30% - 2rem);
     transition: transform 0.3s;
 }
 
@@ -166,7 +164,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px; /* Increased max-width */
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -207,17 +205,23 @@ ul {
 }
 
 ul li {
-    padding: 15px; /* Increased padding */
+    padding: 15px;
     background: #f9f9f9;
     border: 1px solid #ddd;
     margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 1.1rem; /* Slightly increased font size */
+    font-size: 1.1rem;
 }
 
 .contact-info {
     margin-top: 2rem;
-    text-align:right;
+}
+.container
+{
+
+    text-align: center;
+    justify-content: center;
+
 }
 
 .contact-info p {
@@ -226,7 +230,9 @@ ul li {
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 450px ;
+    justify-content: center;
+
+    
 }
 
 .contact-info i.material-icons {
@@ -242,4 +248,80 @@ ul li {
 
 .contact-info a:hover {
     color: #ff6f61;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidenav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        border-right: none;
+        border-bottom: 2px solid salmon;
+        padding: 0;
+    }
+
+    .sidenav a {
+        float: left;
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .sidenav a img.icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidenav a img.icon1 {
+        margin-left: -50px;
+        width: 80px;
+        height: 24px;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        margin-bottom: 1rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    .explore-button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        flex: 1 1 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info p {
+        justify-content: center;
+    }
 }
