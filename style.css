@@ -120,6 +120,8 @@ p {
     background-color: black;
     border: none;
     border-radius: 5px;
+    justify-content: center;
+    margin-left: 210px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
